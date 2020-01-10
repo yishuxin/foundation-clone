@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-orange-200 border-b-2 py-8">
+  <section class="bg-orange-200 border-b-2 py-8 lg:border-none">
     <div class="mx-4 sm:flex items-center">
       <figure-frame class="sm:w-1/2">
         <template #figure>
-          <img class="h-auto w-56" src="../../static/imgs/rush-4@2x.png" alt />
+          <img class="h-auto w-56 lg:w-104" src="../../static/imgs/rush-4@2x.png" alt />
         </template>
         <template #figureCaption>
           <p>Connect with customers and grow faster</p>
@@ -19,8 +19,7 @@
             users. Receive messages from leads.
           </template>
         </content-frame>
-
-        <quote />
+        <quote class="lg:w-3/4 mx-auto" />
       </div>
     </div>
   </section>

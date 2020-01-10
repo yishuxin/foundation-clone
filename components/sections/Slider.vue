@@ -2,12 +2,22 @@
   <div class="bg-white border-gray-300 border-b">
     <brand-pic />
     <home-slider />
-    <figure-frame>
+    <figure-frame class="lg:hidden">
       <template #figure>
-        <img class="h-auto w-64" src="../../static/imgs/rush-16@2x.png" alt />
+        <img class="h-auto w-64" src="../../static/imgs/rush-1.png" alt />
       </template>
       <template #figureCaption>
         <p>A better way to acquire new users</p>
+      </template>
+    </figure-frame>
+
+    <figure-frame class="hidden lg:block lg:relative lg:w-auto">
+      <template #figure>
+        <img
+          class="h-auto w-80 lg:absolute lg:right-0 lg:bottom-0"
+          src="../../static/imgs/rush-1.png"
+          alt
+        />
       </template>
     </figure-frame>
   </div>

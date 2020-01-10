@@ -1,10 +1,10 @@
 <template>
-  <div class="mx-6 bg-white flex flex-col items-center h-64 shadow mb-6 sm:mx-0">
+  <div class="mx-6 bg-white flex flex-col items-center h-64 shadow mb-6 sm:mx-0 lg:mb-2 lg:h-auto">
     <q class="p-2 m-4 text-lg">
       Great widgets. Great selection. Great design and easy to implement.
       Definitely a huge time saver for a web developer!
     </q>
-    <div class="flex items-center p-2 -ml-8">
+    <div class="flex items-center p-2 sm:-ml-8 lg:ml-0 lg:mb-6">
       <div class="mr-4">
         <img class="rounded-full w-10 h-auto" src="../../static/imgs/user@2x.png" alt />
       </div>

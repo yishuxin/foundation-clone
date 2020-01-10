@@ -11,8 +11,17 @@ module.exports = {
     },
 
     extend: {
+      fontFamily: {
+        logo: ["Playfair Display", "serif"],
+        body: ["Montserrat", "sans-serif"]
+      },
       colors: {
         "skin-pink": "#F2C6BD"
+      },
+      width: {
+        "72": "18rem",
+        "80": "20rem",
+        "104": "26rem"
       }
     }
   },

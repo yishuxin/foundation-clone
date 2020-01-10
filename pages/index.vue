@@ -15,7 +15,7 @@
 
     <trial-section />
 
-    <brand-section />
+    <brand-section class="lg:hidden" />
   </div>
 </template>
 

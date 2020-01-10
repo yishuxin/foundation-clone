@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-body">
     <Header />
     <nuxt />
     <Footer />
@@ -17,4 +17,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>

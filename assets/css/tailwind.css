@@ -1,3 +1,17 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+.transition-all {
+  transition-property: all;
+}
+.transition-fastest {
+  transition-duration: 50ms;
+}
+.transition-faster {
+  transition-duration: 100ms;
+}
+.transition-fast {
+  transition-duration: 150ms;
+}

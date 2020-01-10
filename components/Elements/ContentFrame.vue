@@ -1,14 +1,16 @@
 <template>
-  <div class="my-4">
+  <div class="my-4 lg:my-0">
     <h3 class="text-indigo-500 font-bold text-xl mb-2 sm:mb-6">
       <slot name="title"></slot>
     </h3>
     <h1 class="text-5xl font-bold leading-none tracking-tighter w-3/4 sm:w-full sm:mb-6">
       <slot name="subTitle"></slot>
     </h1>
-    <p class="my-4 text-xl font-bold sm:text-left sm:ml-10 sm:mb-6">
-      <slot name="content"></slot>
-    </p>
+    <div class="lg:flex justify-center items-center">
+      <p class="my-4 text-xl font-bold sm:text-left sm:mb-6">
+        <slot name="content"></slot>
+      </p>
+    </div>
   </div>
 </template>
 

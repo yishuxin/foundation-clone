@@ -1,7 +1,7 @@
 <template>
   <button
     :class="[color, width, textColor]"
-    class="mx-auto p-2 rounded shadow font-bold"
+    class="transition-fast mx-auto p-2 rounded shadow font-bold"
   >
     <slot></slot>
   </button>
@@ -26,4 +26,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>

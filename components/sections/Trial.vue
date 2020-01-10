@@ -1,6 +1,6 @@
 <template>
-  <section class="sm:my-16">
-    <div class="mx-4 sm:flex items-center">
+  <section class="sm:my-16 bg-red-200 lg:py-24">
+    <div class="mx-4 sm:flex items-center lg:mx-20">
       <div class="sm:w-1/3 sm:mx-8">
         <img class="mx-auto" src="../../static/imgs/rush.png" alt />
       </div>
@@ -16,13 +16,15 @@
           </p>
         </div>
         <div>
-          <form class="flex flex-col sm:flex-row sm:items-center">
+          <form class="flex flex-col sm:flex-row sm:items-center lg:justify-start">
             <input
-              class="mb-4 border border-gray-200 rounded py-2 sm:mb-0 sm:mr-4 sm:px-6"
+              class="mb-4 border border-gray-200 rounded py-2 sm:mb-0 sm:mr-4 sm:px-6 lg:px-24"
               type="text"
               placeholder="Enter Your Email"
             />
-            <my-button width="w-full">Subscribe</my-button>
+            <div>
+              <my-button width="w-32">Subscribe</my-button>
+            </div>
           </form>
         </div>
         <p class="text-sm text-gray-600 mt-2">
