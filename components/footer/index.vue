@@ -10,7 +10,9 @@
               class="my-1 text-gray-700"
               v-for="(item, index) in brand.list"
               :key="index"
-            >{{ item }}</li>
+            >
+              {{ item }}
+            </li>
           </ul>
         </div>
       </div>
@@ -27,13 +29,13 @@
       <div class="my-4 mb-8 mx-auto sm:w-1/2 lg:mx-0 lg:w-64 lg:mb-4">
         <ul class="flex sm:justify-around">
           <li class="mr-4">
-            <img src="../../static/imgs/icon-twitter.svg" alt />
+            <img src="@/static/imgs/svg/icon-twitter.svg" alt />
           </li>
           <li class="mr-4">
-            <img src="../../static/imgs/icon-facebook.svg" alt />
+            <img src="@/static/imgs/svg/icon-facebook.svg" alt />
           </li>
           <li class="mr-4">
-            <img src="../../static/imgs/icon-linkedin.svg" alt />
+            <img src="@/static/imgs/svg/icon-linkedin.svg" alt />
           </li>
         </ul>
       </div>

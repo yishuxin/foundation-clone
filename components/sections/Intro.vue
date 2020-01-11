@@ -1,5 +1,5 @@
 <template>
-  <section class="my-8 bg-gray-100 py-8">
+  <section class="my-8 bg-gray-100 lg:py-8">
     <div class="mx-4 sm:flex lg:mx-16 lg:justify-between">
       <div class="mb-6 sm:mr-6">
         <h1 class="text-2xl font-bold lg:text-3xl lg:mb-4">What is it about?</h1>
