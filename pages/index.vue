@@ -14,8 +14,6 @@
     <hiring-section />
 
     <trial-section />
-
-    <brand-section class="lg:hidden" />
   </div>
 </template>
 
