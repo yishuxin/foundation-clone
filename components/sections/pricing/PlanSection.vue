@@ -1,14 +1,10 @@
 <template>
-  <section class="py-6 text-gray-700 bg-purple-200 ">
+  <section class="py-6 text-gray-700 bg-purple-200">
     <div class="mx-4">
       <h2
-        class="font-logo text-4xl font-bold py-2 text-center leading-tight md:m-5 lg:text-6xl "
-      >
-        Pick a plan. Grow faster with Foundation
-      </h2>
-      <h3 class="text-2xl text-center pt-2 pb-10 md:mb-12 lg:text-4xl">
-        Try for free for 14 days.
-      </h3>
+        class="font-logo text-4xl font-bold py-2 text-center leading-tight md:m-5 lg:text-6xl"
+      >Pick a plan. Grow faster with Foundation</h2>
+      <h3 class="text-2xl text-center pt-2 pb-10 md:mb-12 lg:text-4xl">Try for free for 14 days.</h3>
 
       <div class="md:flex">
         <plan-card v-for="(plan, index) in plans" :key="index" :plan="plan" />
@@ -18,7 +14,7 @@
 </template>
 
 <script>
-import PlanCard from "@/components/elements/PlanCard.vue";
+import PlanCard from "@/components/UI/PlanCard.vue";
 export default {
   components: {
     PlanCard

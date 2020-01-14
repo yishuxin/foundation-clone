@@ -4,30 +4,24 @@
       <div class="sm:w-2/3 lg:w-full lg:mr-8">
         <h1
           class="text-5xl py-4 font-bold leading-tight tracking-wide lg:text-6xl font-logo"
-        >
-          Build stunning websites & apps.
-        </h1>
+        >Build stunning websites & apps.</h1>
         <p class="text-xl my-2 lg:text-4xl">
           Create live segments and target the right people for messages based on
           their behaviors.
         </p>
-        <div
-          class="flex flex-col flex-shrink-0 justify-center my-6 sm:flex-row sm:my-4 sm:w-1/2"
-        >
+        <div class="flex flex-col flex-shrink-0 justify-center my-6 sm:flex-row sm:my-4 sm:w-1/2">
           <base-button
-            class="m-2 sm:mr-4 "
+            class="m-2 sm:mr-4"
             color="bg-indigo-500"
             width="w-full"
             textColor="text-white"
-            >Get Started</base-button
-          >
+          >Get Started</base-button>
           <base-button
-            class="m-2 "
+            class="m-2"
             color="bg-white"
             width="w-full"
             textColor="text-indigo-500"
-            >Learn More</base-button
-          >
+          >Learn More</base-button>
         </div>
       </div>
 
@@ -40,7 +34,7 @@
 </template>
 
 <script>
-import BaseButton from "@/components/elements/BaseButton.vue";
+import BaseButton from "@/components/UI/BaseButton.vue";
 export default {
   components: {
     BaseButton

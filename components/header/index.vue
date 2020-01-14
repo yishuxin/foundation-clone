@@ -206,7 +206,7 @@
 </template>
 
 <script>
-import BaseButton from "@/components/elements/BaseButton.vue";
+import BaseButton from "@/components/UI/BaseButton.vue";
 import { directive as onClickaway } from "vue-clickaway";
 
 export default {

@@ -4,9 +4,7 @@
       <div class="mx-4 mx-auto bg-teal-300">
         <h1
           class="font-logo text-5xl text-center pb-6 border-b border-gray-300 md:text-6xl md:py-10"
-        >
-          Contact Us
-        </h1>
+        >Contact Us</h1>
       </div>
       <form class="text-center my-10">
         <div class="my-3">
@@ -29,8 +27,8 @@
           <label class="block mb-2 text-gray-600">Message:</label>
           <textarea
             class="mb-2 w-72 appearance-none p-2 bg-gray-100 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-white focus:border-teal-300 md:w-104"
-            name=""
-            id=""
+            name
+            id
             cols="30"
             rows="10"
           ></textarea>
@@ -42,7 +40,7 @@
 </template>
 
 <script>
-import BaseButton from "@/components/elements/BaseButton.vue";
+import BaseButton from "@/components/UI/BaseButton.vue";
 export default {
   layout: "contact",
   components: {

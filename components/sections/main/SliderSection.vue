@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import BrandPic from "@/components/elements/BrandPic.vue";
-import HomeSlider from "@/components/elements/HomeSlider.vue";
-import FigureFrame from "@/components/elements/frames/FigureFrame.vue";
+import BrandPic from "@/components/UI/BrandPic.vue";
+import HomeSlider from "@/components/UI/HomeSlider.vue";
+import FigureFrame from "@/components/UI/frames/FigureFrame.vue";
 export default {
   components: {
     BrandPic,

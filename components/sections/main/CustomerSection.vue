@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:bg-white mt-8 ">
+  <section class="lg:bg-white mt-8">
     <!-- Brand component -->
     <BrandPic />
 
@@ -14,12 +14,7 @@
         </template>
       </content-frame>
 
-      <div
-        class="sm:flex"
-        v-for="(item, index) in customerList"
-        :key="index"
-        v-scroll-reveal.reset
-      >
+      <div class="sm:flex" v-for="(item, index) in customerList" :key="index" v-scroll-reveal.reset>
         <div class="sm:w-1/2">
           <div class="flex text-indigo-500 items-center">
             <svg
@@ -34,17 +29,12 @@
             <h1
               @click="showPic(item)"
               class="ml-2 font-bold text-xl leading-none py-2"
-            >
-              {{ item.title }}
-            </h1>
+            >{{ item.title }}</h1>
           </div>
           <p class="my-2">{{ item.subTitle }}</p>
         </div>
 
-        <div
-          v-if="item.isOpen"
-          class="p-2 border-b-4 border-indigo-500 sm:w-1/2 sm:mx-auto"
-        >
+        <div v-if="item.isOpen" class="p-2 border-b-4 border-indigo-500 sm:w-1/2 sm:mx-auto">
           <img :src="item.imgURL" alt />
         </div>
       </div>
@@ -86,9 +76,7 @@
                 <h1
                   :class="item.isActive ? 'text-green-600' : ''"
                   class="ml-2 font-bold text-xl leading-none py-2"
-                >
-                  {{ item.title }}
-                </h1>
+                >{{ item.title }}</h1>
               </div>
               <p class="my-2">{{ item.subTitle }}</p>
             </li>
@@ -104,8 +92,8 @@
 </template>
 
 <script>
-import ContentFrame from "@/components/elements/frames/ContentFrame.vue";
-import BrandPic from "@/components/elements/BrandPic.vue";
+import ContentFrame from "@/components/UI/frames/ContentFrame.vue";
+import BrandPic from "@/components/UI/BrandPic.vue";
 export default {
   components: {
     ContentFrame,
