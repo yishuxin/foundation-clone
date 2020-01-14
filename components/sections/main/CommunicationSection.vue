@@ -29,7 +29,7 @@
     </div>
 
     <div class="text-lg sm:flex items-start justify-around lg:mx-20">
-      <div class="m-2 p-2 border-r lg:ml-0" v-scroll-reveal.reset>
+      <div class="m-2 p-2 border-r lg:ml-0" v-scroll-reveal>
         <h1 class="font-bold lg:text-xl lg:text-gray-800 lg:mb-3">Subscriptions.</h1>
         <p>
           Foundation works with the tools and services you already use every
@@ -37,7 +37,7 @@
         </p>
         <a class="inline-block text-blue-600 underline py-1" href>Learn more about subscriptions</a>
       </div>
-      <div class="m-2 p-2 border-r lg:ml-0" v-scroll-reveal.reset="{ delay: 200 }">
+      <div class="m-2 p-2 border-r lg:ml-0" v-scroll-reveal="{ delay: 200 }">
         <h1 class="font-bold lg:text-xl lg:text-gray-800 lg:mb-3">Felxible Hours.</h1>
         <p>
           Get started with our simple snippet of JavaScript or easy to install
@@ -45,7 +45,7 @@
         </p>
         <a class="inline-block text-blue-600 underline py-1" href>Get more info about hours</a>
       </div>
-      <div class="m-2 p-2 lg:ml-0" v-scroll-reveal.reset="{ delay: 400 }">
+      <div class="m-2 p-2 lg:ml-0" v-scroll-reveal="{ delay: 400 }">
         <h1 class="font-bold lg:text-xl lg:text-gray-800 lg:mb-3">Fast Communication.</h1>
         <p>We offer measures like 2FA and SSO to ensure the safety of your data.</p>
         <a class="inline-block text-blue-600 underline py-1" href>Communication guidelines</a>

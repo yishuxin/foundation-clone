@@ -9,7 +9,7 @@
         v-if="plan.onSale"
       >
         <h4>
-          <span class="text-indigo-500">Save 30%</span>
+          <span class="text-indigo-500 text-2xl">Save 30%</span>
           <span class="text-gray-500">with this plan</span>
         </h4>
       </div>

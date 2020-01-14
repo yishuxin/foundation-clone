@@ -1,6 +1,6 @@
 <template>
   <section class="mx-4 my-8 sm:mx-20">
-    <div v-scroll-reveal.reset>
+    <div v-scroll-reveal>
       <h1 class="text-5xl leading-none tracking-tighter sm:text-center sm:mb-6">We're hiring</h1>
       <p class="text-left text-xl my-4 sm:mb-6 lg:text-center">
         We’re a team of lifelong learners. We’re equal parts left and right
@@ -16,7 +16,7 @@
 
       <div class="mt-8 sm:mx-12 lg:mx-48">
         <div
-          v-scroll-reveal.reset="{ delay: 200 }"
+          v-scroll-reveal="{ delay: 200 }"
           class="flex justify-around border rounded-lg shadow-sm h-24 mb-4 lg:h-16"
         >
           <div

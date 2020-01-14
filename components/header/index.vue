@@ -46,15 +46,20 @@
       >
         <div v-if="isDropdownOpen" class="origin-top lg:hidden flex items-center mx-8 sm:flex-col">
           <ul>
-            <nuxt-link to>
+            <nuxt-link to="/">
               <li
                 class="transition-fast my-2 font-bold text-lg text-gray-700 hover:text-indigo-500"
               >Home</li>
             </nuxt-link>
-            <nuxt-link to>
+            <nuxt-link to="/pricing">
               <li
                 class="transition-fast my-2 font-bold text-lg text-gray-700 hover:text-indigo-500"
-              >Stories</li>
+              >Pricing</li>
+            </nuxt-link>
+            <nuxt-link to="/contact">
+              <li
+                class="transition-fast my-2 font-bold text-lg text-gray-700 hover:text-indigo-500"
+              >Contact</li>
             </nuxt-link>
             <nuxt-link to>
               <li @click="openSubNav" class="transition-fast my-2 font-bold text-lg text-gray-700">
