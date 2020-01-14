@@ -14,7 +14,8 @@
     "nuxt": "^2.0.0",
     "nuxt-lazy-load": "^1.0.5",
     "nuxt-svg-loader": "^1.0.1",
-    "vue-carousel": "^0.18.0"
+    "vue-carousel": "^0.18.0",
+    "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",

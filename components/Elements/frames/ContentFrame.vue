@@ -1,10 +1,10 @@
 <template>
-  <div class="my-4 lg:my-0">
+  <div class="my-4 lg:my-0" v-scroll-reveal>
     <h3 class="text-indigo-500 font-bold text-xl mb-2 sm:mb-6">
       <slot name="title"></slot>
     </h3>
     <h1
-      class="text-4xl font-bold leading-none tracking-tighter w-3/4 sm:w-full sm:mb-6 lg:text-5xl"
+      class="text-4xl font-bold leading-none tracking-tight leading-tight sm:w-full sm:mb-6 lg:text-5xl"
     >
       <slot name="subTitle"></slot>
     </h1>

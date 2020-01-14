@@ -8,7 +8,11 @@
     </q>
     <div class="flex items-center p-2 sm:-ml-8 lg:ml-0 lg:mb-6">
       <div class="mr-4">
-        <img class="rounded-full w-10 h-auto" src="../../static/imgs/user@2x.png" alt />
+        <img
+          class="rounded-full w-10 h-auto"
+          src="~assets/imgs/user@2x.png"
+          alt
+        />
       </div>
       <div>
         <h4 class="font-bold">Viella Malkovich</h4>

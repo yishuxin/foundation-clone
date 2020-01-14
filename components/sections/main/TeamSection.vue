@@ -5,7 +5,7 @@
         <template #figure>
           <img
             class="h-auto w-56 lg:w-104"
-            src="../../static/imgs/rush-4@2x.png"
+            src="~/assets/imgs/rush-4@2x.png"
             alt
           />
         </template>
@@ -23,21 +23,21 @@
             users. Receive messages from leads.
           </template>
         </content-frame>
-        <quote class="lg:w-3/4 mx-auto" />
+        <quote-card class="lg:w-3/4 mx-auto" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import FigureFrame from "@/components/Elements/FigureFrame.vue";
-import ContentFrame from "@/components/Elements/ContentFrame.vue";
-import QuoteCard from "@/components/Elements/QuoteCard.vue";
+import FigureFrame from "@/components/elements/frames/FigureFrame.vue";
+import ContentFrame from "@/components/elements/frames/ContentFrame.vue";
+import QuoteCard from "@/components/elements/QuoteCard.vue";
 export default {
   components: {
-    "figure-frame": FigureFrame,
-    "content-frame": ContentFrame,
-    quote: QuoteCard
+    FigureFrame,
+    ContentFrame,
+    QuoteCard
   }
 };
 </script>

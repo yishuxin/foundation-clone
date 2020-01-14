@@ -14,8 +14,11 @@
         </content-frame>
 
         <div class="flex justify-center mt-4 mb-8 sm:w-1/2 lg:w-1/4">
-          <my-button width="w-full" color="bg-indigo-600" textColor="text-white"
-            >Get Started</my-button
+          <base-button
+            width="w-full"
+            color="bg-indigo-600"
+            textColor="text-white"
+            >Get Started</base-button
           >
         </div>
       </div>
@@ -24,7 +27,7 @@
         <template #figure>
           <img
             class="h-auto w-64 lg:w-104"
-            src="../../static/imgs/rush-16@2x.png"
+            src="~/assets/imgs/rush-16@2x.png"
             alt
           />
         </template>
@@ -34,10 +37,8 @@
       </figure-frame>
     </div>
 
-    <div
-      class="text-lg sm:flex items-start justify-around lg:mx-20 lg:items-center"
-    >
-      <div class="m-2 p-2 border-r lg:ml-0">
+    <div class="text-lg sm:flex items-start justify-around lg:mx-20 ">
+      <div class="m-2 p-2 border-r lg:ml-0" v-scroll-reveal.reset>
         <h1 class="font-bold lg:text-xl lg:text-gray-800 lg:mb-3">
           Subscriptions.
         </h1>
@@ -49,7 +50,10 @@
           >Learn more about subscriptions</a
         >
       </div>
-      <div class="m-2 p-2 border-r lg:ml-0">
+      <div
+        class="m-2 p-2 border-r lg:ml-0"
+        v-scroll-reveal.reset="{ delay: 200 }"
+      >
         <h1 class="font-bold lg:text-xl lg:text-gray-800 lg:mb-3">
           Felxible Hours.
         </h1>
@@ -61,7 +65,7 @@
           >Get more info about hours</a
         >
       </div>
-      <div class="m-2 p-2 lg:ml-0">
+      <div class="m-2 p-2 lg:ml-0" v-scroll-reveal.reset="{ delay: 400 }">
         <h1 class="font-bold lg:text-xl lg:text-gray-800 lg:mb-3">
           Fast Communication.
         </h1>
@@ -77,15 +81,15 @@
 </template>
 
 <script>
-import ContentFrame from "@/components/Elements/ContentFrame.vue";
-import MyButton from "@/components/Elements/MyButton.vue";
-import FigureFrame from "@/components/Elements/FigureFrame.vue";
+import ContentFrame from "@/components/elements/frames/ContentFrame.vue";
+import BaseButton from "@/components/elements/BaseButton.vue";
+import FigureFrame from "@/components/elements/frames/FigureFrame.vue";
 
 export default {
   components: {
-    "content-frame": ContentFrame,
-    "my-button": MyButton,
-    "figure-frame": FigureFrame
+    ContentFrame,
+    BaseButton,
+    FigureFrame
   }
 };
 </script>

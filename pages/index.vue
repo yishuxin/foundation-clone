@@ -1,53 +1,54 @@
 <template>
   <div class="bg-gray-100 text-gray-700">
     <landing-section />
-    <intro-section />
+    <intro-section v-scroll-reveal />
     <customer-section />
-    <team-section />
-
+    <team-section v-scroll-reveal />
     <communication-section />
-
     <visitors-section />
-
     <slider-section />
-
     <hiring-section />
-
-    <trial-section />
+    <trial-section v-scroll-reveal />
   </div>
 </template>
 
 <script>
-import Landing from "@/components/sections/Landing.vue";
-import Intro from "@/components/sections/Intro.vue";
-import Customer from "@/components/sections/Customer.vue";
-import Team from "@/components/sections/Team.vue";
-import Communication from "@/components/sections/Communication.vue";
-import Visitors from "@/components/sections/Visitors.vue";
-import Slider from "@/components/sections/Slider.vue";
-import Hiring from "@/components/sections/Hiring.vue";
-import Trial from "@/components/sections/Trial.vue";
-import Brand from "@/components/sections/Brand.vue";
-
-import MyButton from "@/components/Elements/MyButton.vue";
-import HomeSlider from "@/components/Sliders/HomeSlider.vue";
+import LandingSection from "@/components/sections/main/LandingSection.vue";
+import IntroSection from "@/components/sections/main/IntroSection.vue";
+import CustomerSection from "@/components/sections/main/CustomerSection.vue";
+import TeamSection from "@/components/sections/main/TeamSection.vue";
+import CommunicationSection from "@/components/sections/main/CommunicationSection.vue";
+import VisitorsSection from "@/components/sections/main/VisitorsSection.vue";
+import SliderSection from "@/components/sections/main/SliderSection.vue";
+import HiringSection from "@/components/sections/main/HiringSection.vue";
+import TrialSection from "@/components/sections/main/TrialSection.vue";
+import BrandSection from "@/components/sections/main/BrandSection.vue";
 
 export default {
+  transition: "page",
   components: {
-    "landing-section": Landing,
-    "intro-section": Intro,
-    "customer-section": Customer,
-    "team-section": Team,
-    "communication-section": Communication,
-    "visitors-section": Visitors,
-    "slider-section": Slider,
-    "hiring-section": Hiring,
-    "trial-section": Trial,
-    "brand-section": Brand,
-    MyButton,
-    HomeSlider
+    LandingSection,
+    IntroSection,
+    CustomerSection,
+    TeamSection,
+    CommunicationSection,
+    VisitorsSection,
+    SliderSection,
+    HiringSection,
+    TrialSection,
+    BrandSection
   }
 };
 </script>
 
-<style></style>
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 2s ease-out;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+</style>

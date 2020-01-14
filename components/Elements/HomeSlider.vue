@@ -1,6 +1,6 @@
 <template>
   <carousel
-    class="mx-4 sm:py-10 lg:mx-48 lg:text-center"
+    class="mx-4 sm:py-10 lg:mx-48 lg:text-center flex items-center justify-center"
     :per-page="1"
     :autoplay="true"
     :pagination-enabled="true"
@@ -8,11 +8,19 @@
     :centerMode="true"
     pagination-active-color="gray"
   >
-    <slide class="my-8 lg:h-64" v-for="(content, index) in sliderContents" :key="index">
-      <h1 class="my-4 text-xl text-indigo-500 font-bold">{{ content.title }}</h1>
+    <slide
+      class="my-8 lg:h-64"
+      v-for="(content, index) in sliderContents"
+      :key="index"
+    >
+      <h1 class="my-4 text-xl text-indigo-500 font-bold">
+        {{ content.title }}
+      </h1>
       <q class="text-xl">{{ content.quote }}</q>
       <h3 class="text-center mt-4 font-bold text-sm">{{ content.name }}</h3>
-      <h3 class="text-center mb-4 font-bold text-sm text-gray-500">{{ content.role }}</h3>
+      <h3 class="text-center mb-4 font-bold text-sm text-gray-500">
+        {{ content.role }}
+      </h3>
     </slide>
   </carousel>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <footer class="mx-4 px-2">
-    <div class="lg:flex lg:items-center lg:border-b">
-      <Brand class="lg:w-1/2" />
+  <footer class="mx-4 px-2 bg-white text-gray-700" v-scroll-reveal>
+    <div class="lg:flex lg:items-start lg:border-b">
+      <brand-section class="lg:w-1/2" />
       <div class="sm:flex justify-around">
         <div class="my-4 lg:mx-8" v-for="(brand, index) in brands" :key="index">
           <h1 class="font-bold text-xl mb-3">{{ brand.title }}</h1>
@@ -30,7 +30,7 @@
         <ul class="flex sm:justify-around lg:items-center">
           <li class="mr-4">
             <svg
-              class="text-indigo-500 fill-current h-6 w-6"
+              class="text-indigo-500 fill-current h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 18 17"
             >
@@ -41,7 +41,7 @@
           </li>
           <li class="mr-4">
             <svg
-              class="text-indigo-500 fill-current h-6 w-6"
+              class="text-indigo-500 fill-current h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 18 18"
             >
@@ -52,7 +52,7 @@
           </li>
           <li class="mr-4">
             <svg
-              class="text-indigo-500 fill-current h-6 w-6"
+              class="text-indigo-500 fill-current h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 16"
             >
@@ -68,10 +68,10 @@
 </template>
 
 <script>
-import Brand from "@/components/sections/Brand.vue";
+import BrandSection from "@/components/sections/main/BrandSection.vue";
 export default {
   components: {
-    Brand
+    BrandSection
   },
   data() {
     return {

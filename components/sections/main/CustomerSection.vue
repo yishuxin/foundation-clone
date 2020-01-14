@@ -14,7 +14,12 @@
         </template>
       </content-frame>
 
-      <div class="sm:flex" v-for="(item, index) in customerList" :key="index">
+      <div
+        class="sm:flex"
+        v-for="(item, index) in customerList"
+        :key="index"
+        v-scroll-reveal.reset
+      >
         <div class="sm:w-1/2">
           <div class="flex text-indigo-500 items-center">
             <svg
@@ -64,6 +69,7 @@
               v-for="(item, index) in customerList"
               :key="index"
               @click="changePic(item)"
+              v-scroll-reveal="{ delay: index * 100 }"
             >
               <div class="flex text-indigo-500 items-center">
                 <svg
@@ -90,7 +96,7 @@
         </div>
       </div>
 
-      <div class=" p-8">
+      <div class="p-8" v-scroll-reveal="{ delay: 350 }">
         <img :src="imgSrc" alt />
       </div>
     </div>
@@ -98,11 +104,11 @@
 </template>
 
 <script>
-import ContentFrame from "@/components/Elements/ContentFrame.vue";
-import BrandPic from "@/components/Elements/BrandPic.vue";
+import ContentFrame from "@/components/elements/frames/ContentFrame.vue";
+import BrandPic from "@/components/elements/BrandPic.vue";
 export default {
   components: {
-    "content-frame": ContentFrame,
+    ContentFrame,
     BrandPic
   },
   data() {

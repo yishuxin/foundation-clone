@@ -30,7 +30,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: "#3B8070" },
   /*
    ** Global CSS
    */
@@ -38,7 +38,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~/plugins/vue-carousel.js", ssr: false }],
+  plugins: [
+    { src: "~/plugins/vue-carousel.js", ssr: false },
+    { src: "~/plugins/vue-scroll-reveal.js", ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

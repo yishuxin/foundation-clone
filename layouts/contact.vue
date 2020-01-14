@@ -1,6 +1,6 @@
 <template>
   <div class="font-body">
-    <Header bgColor="bg-skin-pink" activeLink="Home" />
+    <Header bgColor="bg-teal-300 " activeLink="Contact" />
     <nuxt />
     <Footer />
   </div>

@@ -1,7 +1,7 @@
 <template>
   <button
     :class="[color, width, textColor]"
-    class="transition-fast mx-auto p-2 rounded shadow font-bold "
+    class="transition-fast mx-auto p-2 rounded shadow font-bold"
   >
     <slot></slot>
   </button>
